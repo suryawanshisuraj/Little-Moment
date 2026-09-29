@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fbf8f2" />
+  <meta name="description" content="Make a little moment unforgettable. Create a personal celebration page for someone you love." />
+  <title>Little Moment — make it mean something</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%200%20100%20100%22><text y=%22.9em%22 font-size=%2290%22>✳️</text></svg>" />
+  
+  <!-- Open Graph & Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Little Moment — make it mean something" />
+  <meta property="og:description" content="Turn your favorite memories into a personal celebration page for someone you love." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1200&h=630&q=85" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Little Moment — make it mean something" />
+  <meta name="twitter:description" content="Turn your favorite memories into a personal celebration page for someone you love." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1200&h=630&q=85" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Little Moment home"><span class="brand-mark">✳</span> little moment<span class="brand-dot">.</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#occasions">Occasions</a><a href="#templates">Explore designs</a><a href="#how">How it works</a>
+    </nav>
+    <a class="button button-light nav-cta" href="#occasions">Make a moment <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="sparkle">✳</span> The internet, a little more personal</div>
+        <h1>For the people<br>who make life <em>life.</em></h1>
+        <p class="hero-text">Turn your favorite memories into a little something they’ll never forget. Made by you, just for them.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#occasions">Make a moment <span>↗</span></a><a class="button button-light hero-secondary-cta" href="#templates">See what you can make <span>↓</span></a></div>
+        <div class="social-proof"><div class="avatar-stack"><i>J</i><i>M</i><i>A</i><i>K</i></div><span>Little moments, made with love <b>♡</b></span></div>
+      </div>
+      <div class="hero-art" aria-label="A sample personalized celebration page">
+        <div class="art-sticker sticker-one">made with<br>♡ for you</div>
+        <div class="polaroid"><div class="polaroid-photo"><img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1000&q=85" alt="Two friends sharing a joyful moment" width="500" height="600" fetchpriority="high"></div><span>the good stuff, always</span></div>
+        <div class="hero-note"><div class="note-kicker">A little note for</div><div class="note-name">my favorite<br>person <span>♡</span></div><div class="note-from">there’s nobody quite like you.</div><div class="note-flower">✿</div></div>
+        <div class="art-sticker sticker-two">your story,<br>your way <span>↗</span></div>
+        <div class="art-sun">✳</div>
+      </div>
+      <div class="hero-bottom"><span>01 — Made for your people</span><span>Scroll a little <b>↓</b></span></div>
+    </section>
+
+    <section class="occasion-section section-pad" id="occasions">
+      <div class="section-heading"><div class="heading-group"><div class="eyebrow">A reason to celebrate</div><h2>Big day, little day.<br><em>Make it theirs.</em></h2><p>Every occasion is better when it feels like it was made just for them. Pick your reason, then make it personal.</p></div></div>
+      <div class="occasion-filters" role="group" aria-label="Filter occasions"><button class="filter-chip active" data-filter="All">All the good things <span>24</span></button><button class="filter-chip" data-filter="Love">Love <span>5</span></button><button class="filter-chip" data-filter="Friends & family">Friends & family <span>8</span></button><button class="filter-chip" data-filter="Milestones">Milestones <span>4</span></button><button class="filter-chip" data-filter="Festivals">Festivals <span>7</span></button></div>
+      <div class="occasion-grid" id="occasionGrid" aria-live="polite"></div>
+      <div class="occasion-toggle-wrap" id="occasionToggleWrap"></div>
+    </section>
+
+    <section class="featured section-pad" id="templates">
+      <div class="featured-top"><div><div class="eyebrow eyebrow-light">A little inspiration</div><h2>Some love notes<br>to get you <em>started.</em></h2></div><a class="button button-light" href="#occasions">See all occasions <span>↗</span></a></div>
+      <div class="template-grid" id="templateGrid"></div>
+    </section>
+
+    <section class="how-section section-pad" id="how">
+      <div class="how-heading"><div class="eyebrow">No design degree required</div><h2>It’s your story.<br><em>We make it shine.</em></h2><p>A few little steps, one very big smile.</p></div>
+      <div class="steps">
+        <article class="step"><div class="step-no">Step 01</div><div class="step-illustration step-badge" aria-hidden="true">💌</div><h3>Pick your moment</h3><p>Birthday, just-because, or their big day. There’s a little something for all of them.</p></article>
+        <article class="step"><div class="step-no">Step 02</div><div class="step-illustration step-badge" aria-hidden="true">✍️</div><h3>Make it personal</h3><p>Add their name, your words, and the photos that make you both smile.</p></article>
+        <article class="step"><div class="step-no">Step 03</div><div class="step-illustration step-badge" aria-hidden="true">🥳</div><h3>Send the happy</h3><p>Share your one-of-a-kind page. Then wait for the “okay, I’m crying” text.</p></article>
+      </div>
+    </section>
+
+    <section class="personal-section section-pad">
+      <div class="personal-card"><div class="personal-copy"><div class="eyebrow">A small preview of the big feeling</div><h2>It sounds like <em>you.</em><br>Because it is.</h2><p>Not another generic greeting. A little digital corner of the internet made just for your favorite human.</p><a class="button button-dark" href="#occasions">Make yours <span>↗</span></a></div><div class="personal-preview"><div class="preview-top"><span>✳ Little moment</span><span>made for you ♡</span></div><div class="preview-image"><img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1000&q=85" alt="A couple enjoying a walk together" loading="lazy"></div><div class="preview-message"><span>A note from your person</span><h3>Hey, <em>sunshine.</em></h3><p>Of all the people in all the places, I’m glad I found you. Here’s to all our little things. ♡</p><span class="preview-sign">— your person, always</span></div></div><span class="personal-doodle" aria-hidden="true">♥</span><span class="personal-caption">Your words. Your people. Your kind of magic.</span></div>
+    </section>
+
+    <section class="final-cta"><div class="cta-flower" aria-hidden="true">✿</div><div class="eyebrow eyebrow-light">The best gifts are the ones that feel like you</div><h2>Someone’s about to feel<br><em>very, very loved.</em></h2><a href="#occasions" class="button button-light">Let’s make their day <span>↗</span></a><div class="cta-scribble" aria-hidden="true">♡</div></section>
+  </main>
+  <footer class="footer"><div class="footer-container"><a class="brand" href="#home" aria-label="Little Moment home"><span class="brand-mark">✳</span> little moment<span class="brand-dot">.</span></a><p>A little more heart in your corner of the internet.</p><nav class="footer-links" aria-label="Footer navigation"><a href="#occasions">Occasions</a><a href="#templates">Explore designs</a><a href="#how">How it works</a></nav><span class="copyright">Made with a little ♡ · 2026</span></div></footer>
+
+  <!-- Builder Modal -->
+  <dialog class="builder" id="builder" aria-labelledby="builderTitle">
+    <div class="builder-head">
+      <span class="brand"><span class="brand-mark">✳</span> little moment<span class="brand-dot">.</span></span>
+      <button class="close-builder" aria-label="Close editor">×</button>
+    </div>
+
+    <!-- Mobile view switch tabs -->
+    <div class="mobile-tabs" role="tablist" aria-label="Editor views">
+      <button type="button" class="mobile-tab active" id="tabEditBtn" role="tab" aria-selected="true" aria-controls="builderFormWrapper">✍️ Edit Details</button>
+      <button type="button" class="mobile-tab" id="tabPreviewBtn" role="tab" aria-selected="false" aria-controls="builderPreviewWrap">👁️ Live Preview</button>
+    </div>
+
+    <div class="builder-content">
+      <div class="builder-form" id="builderFormWrapper">
+        <div class="eyebrow">A little personal corner</div>
+        <h2 id="builderTitle">Make it <em>theirs.</em></h2>
+        <p class="builder-subtitle">Add their name, write a note, and share in seconds.</p>
+
+        <form id="builderForm" onsubmit="event.preventDefault()">
+          <!-- Names Row -->
+          <div class="form-row">
+            <div class="form-field">
+              <label for="toName">To (Their name)</label>
+              <input id="toName" maxlength="28" value="your favorite person" placeholder="e.g. Priya" autocomplete="off" />
+            </div>
+            <div class="form-field">
+              <label for="fromName">From (Your name)</label>
+              <input id="fromName" maxlength="32" value="your person" placeholder="e.g. Suraj" autocomplete="name" />
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div class="form-field">
+            <div class="field-label-row">
+              <label for="message">Your note</label>
+              <span id="charCount" class="char-count-mini" aria-live="polite">80 / 220</span>
+            </div>
+            <textarea id="message" maxlength="220" rows="3" placeholder="Write something sweet...">Of all the people in all the places, I’m glad I found you. Here’s to all our little things. ♡</textarea>
+          </div>
+
+          <!-- Color Mood & Photo Bar -->
+          <div class="quick-customize-row">
+            <div class="quick-customize-item">
+              <span class="quick-customize-label">Photo</span>
+              <div class="upload-controls">
+                <label for="photoUpload" class="button button-light upload-btn-compact">
+                  <span>📷</span> <span id="photoBtnText">Add photo</span>
+                </label>
+                <input type="file" id="photoUpload" accept="image/*" class="sr-only" aria-label="Upload a photo for your card" />
+                <button type="button" class="button-text reset-photo-btn" id="resetPhotoBtn" style="display:none;" aria-label="Remove photo">✕</button>
+              </div>
+            </div>
+            <div class="quick-customize-item">
+              <span class="quick-customize-label" id="themePickerLabel">Color</span>
+              <div class="theme-picker" role="group" aria-labelledby="themePickerLabel">
+                <button type="button" class="theme-choice selected" data-theme="rose" aria-label="Rose theme"></button>
+                <button type="button" class="theme-choice" data-theme="peach" aria-label="Peach theme"></button>
+                <button type="button" class="theme-choice" data-theme="lilac" aria-label="Lilac theme"></button>
+                <button type="button" class="theme-choice" data-theme="sage" aria-label="Sage theme"></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- WhatsApp Number (Optional) -->
+          <div class="form-field whatsapp-field">
+            <label for="customerPhone">Your WhatsApp number <span class="optional-tag">(optional, to get your live link)</span></label>
+            <div class="phone-input-group">
+              <span class="phone-prefix" aria-hidden="true">🇮🇳 +91</span>
+              <input type="tel" id="customerPhone" maxlength="15" placeholder="98765 43210" autocomplete="tel" inputmode="tel" />
+            </div>
+          </div>
+
+          <!-- Clear, Easy Action Buttons -->
+          <div class="builder-actions-simple">
+            <a class="button button-whatsapp action-main-btn" id="shareButton" target="_blank" rel="noopener noreferrer" href="#">
+              <span>💬</span> Send on WhatsApp <span>↗</span>
+            </a>
+            <div class="action-sub-buttons">
+              <button type="button" class="button button-dark copy-link-btn" id="copyLinkButton">
+                <span>📋</span> Copy Link &amp; Note
+              </button>
+              <button type="button" class="button button-light" id="previewRecipientBtn">
+                <span>🎁</span> Preview Card
+              </button>
+            </div>
+          </div>
+
+          <p class="share-status" id="shareStatus" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="builder-preview-wrap" id="builderPreviewWrap">
+        <div class="preview-label">Your live preview <span>✳</span></div>
+        <article class="live-card theme-rose" id="liveCard">
+          <div class="live-top"><span>✳ LITTLE MOMENT</span><span>made for you ♡</span></div>
+          <div class="live-photo" id="livePhoto">
+            <img id="liveImage" src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1000&q=85" alt="Celebration page preview photo" />
+            <span id="liveOccasion">JUST BECAUSE</span>
+          </div>
+          <div class="live-body">
+            <span>A little note for</span>
+            <h3 id="liveTo">your favorite<br>person <i>♡</i></h3>
+            <p id="liveMessage">Of all the people in all the places, I’m glad I found you. Here’s to all our little things. ♡</p>
+            <span class="live-from">— <b id="liveFrom">your person</b>, always</span>
+            <div class="live-flower" aria-hidden="true">✿</div>
+          </div>
+          <div class="live-bottom">Made with a little ♡, just for you</div>
+        </article>
+        <div class="preview-hint">Every little detail updates as you type <span>↑</span></div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Recipient Presentation Card Dialog (Celebration View) -->
+  <dialog class="recipient-dialog" id="recipientDialog" aria-labelledby="recipientModalTitle">
+    <div class="recipient-dialog-content">
+      <button class="close-recipient" id="closeRecipientBtn" aria-label="Close card view">×</button>
+      <div class="confetti-container" aria-hidden="true" id="confettiContainer"></div>
+      <div class="recipient-card-shell">
+        <div class="recipient-card-badge">✨ A Little Moment made just for you ✨</div>
+        <article class="live-card recipient-card" id="recipientCardDisplay">
+          <div class="live-top"><span>✳ LITTLE MOMENT</span><span>made with love ♡</span></div>
+          <div class="live-photo" id="recipientPhoto">
+            <img id="recipientImage" src="" alt="Celebration moment" />
+            <span id="recipientOccasionTag">CELEBRATION</span>
+          </div>
+          <div class="live-body">
+            <span>A special note for</span>
+            <h3 id="recipientToDisplay"></h3>
+            <p id="recipientMessageDisplay"></p>
+            <span class="live-from">— <b id="recipientFromDisplay"></b>, always</span>
+            <div class="live-flower" aria-hidden="true">✿</div>
+          </div>
+          <div class="live-bottom">The internet, a little more personal. ♡</div>
+        </article>
+        <div class="recipient-actions">
+          <button type="button" class="button button-dark" id="editThisMomentBtn">
+            <span>✍️</span> Customize / Edit this moment
+          </button>
+          <a href="#occasions" class="button button-light" id="createOwnMomentBtn">
+            <span>💌</span> Make one for someone you love <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
